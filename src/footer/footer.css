@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/BasisGrotesquePro-Regular.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'GrotesqueLight';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/fonts/BasisGrotesquePro-Light.ttf') format('truetype');
+ }
+
+.red {
+    overflow-y: scroll;
+    position: relative;
+    z-index: 1;
+    background: black;
+    width: 100vw;
+    height: 50vh;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    margin-left: -8px;
+}
+.logo {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    transform:translate(-50%, -50%);  
+    width: 13%;
+}
+.copyright {
+    font-family: "Grotesque";
+    z-index: 1;
+    position: absolute;
+    color: white;
+    left: 50%;
+    bottom: 18%;
+    transform:translate(-50%, -50%);  
+    width: 40%;
+    font-size: 12px;
+    text-align: center;
+}
+.contact {
+    font-family: "Grotesque";
+    z-index: 1;
+    position: absolute;
+    color: white;
+    left: 50%;
+    bottom: 30%;
+    transform:translate(-50%, -50%);  
+    width: 40%;
+    font-size: 12px;
+    text-align: center;
+}

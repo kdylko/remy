@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/BasisGrotesquePro-Regular.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'GrotesqueLight';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/fonts/BasisGrotesquePro-Light.ttf') format('truetype');
+ }
+
+.red {
+    overflow-y: scroll;
+    position: relative;
+    z-index: -20;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.tagline {
+    font-family: "Grotesque";
+    z-index: 1;
+    position: absolute;
+    color: black;
+    left: 10%;
+    top: 15%;
+    transform:translate(0, -50%);
+    width: 40%;
+    font-size: 38px;
+    text-align: left;
+}
+.tg1t {
+    font-family: "GrotesqueLight";
+    z-index: 1;
+    position: absolute;
+    color: black;
+    left: 10%;
+    top:30%;
+    font-size: 18px;
+    width: 30%;
+    text-align: left;
+}
+
+.hiring {
+    font-family: "Grotesque";
+    z-index: 1;
+    position: absolute;
+    color: black;
+    left: 60%;
+    top: 15%;
+    transform:translate(0, -50%);
+    width: 40%;
+    font-size: 40px;
+    text-align: left;
+}
+.vacancies {
+    z-index: 1;
+    position: absolute;
+    left: 60%;
+    top: 31%;
+    color: black;
+    font-size: 18px;
+    font-family: "GrotesqueLight";
+    width: 40%;
+}
+.header {
+    font-family: "GrotesqueBold";
+    position: relative;
+}
+.location {
+    font-family: "GrotesqueLight";
+    position: relative;
+
+}
