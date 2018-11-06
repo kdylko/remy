@@ -15,12 +15,13 @@
     overflow-y: scroll;
     position: relative;
     z-index: 1;
-    background: black;
+    background: #121418;
     width: 100vw;
-    height: 50vh;
+    height: 85vh;
     margin-right: -8px;
     margin-bottom: -8px;
     margin-left: -8px;
+    font-size: 15px;
 }
 .logo {
     z-index: 1;
@@ -45,12 +46,56 @@
 .contact {
     font-family: "Grotesque";
     z-index: 1;
+    color: white;
+ 
+    width: 40%;
+    font-size: 15px;
+    text-align: left;
+    line-height: 24px;
+}
+.barcelona {
+    position: absolute;
+    left: 13%;
+    top: 10%;
+}
+.contactkl {
+    font-family: "Grotesque";
+    z-index: 1;
     position: absolute;
     color: white;
     left: 50%;
-    bottom: 30%;
+    bottom: 20%;
     transform:translate(-50%, -50%);  
     width: 40%;
-    font-size: 12px;
+    
     text-align: center;
 }
+.contactkb {
+    font-family: "Grotesque";
+    z-index: 1;
+    position: absolute;
+    color: white;
+    left: 70%;
+    bottom: 20%;
+    transform:translate(-50%, -50%);  
+    width: 40%;
+    
+    text-align: center;
+}
+.contactkbe {
+    font-family: "Grotesque";
+    z-index: 1;
+    position: absolute;
+    color: white;
+    left: 30%;
+    bottom: 20%;
+    transform:translate(-50%, -50%);  
+    width: 40%;
+    
+    text-align: center;
+}
+.bold {
+    font-family: 'GrotesqueBold';
+    line-height: 20px;
+    font-size: 20px;
+ }

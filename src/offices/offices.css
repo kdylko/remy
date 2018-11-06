@@ -28,6 +28,7 @@
     height: 100vh;
     margin-right: -8px;
     margin-left: -8px;
+    font-size:20px;
 }
 .map {
     z-index: 1;
@@ -42,23 +43,23 @@
     z-index: 1;
     position: absolute;
     color: white;
-    left: 10%;
+    left: 13%;
     top: 15%;
     transform:translate(0, -50%);
     width: 40%;
-    font-size: 38px;
     text-align: left;
+    font-size:34px;
 }
 .tg1t {
     font-family: "GrotesqueLight";
     z-index: 1;
     position: absolute;
     color: white;
-    left: 10%;
+    left: 13%;
     top:25%;
-    font-size: 18px;
-    width:30%;
+    width:40%;
     text-align: left;
+    font-size:20px;
 }
 .sliderdiv {
     z-index: 1;

@@ -15,19 +15,18 @@
     overflow-y: scroll;
     position: relative;
     z-index: 1;
+    background: white;
     width: 100vw;
     height: 100vh;
     margin-top: -8px;
     margin-right: -8px;
     margin-left: -8px;
-    background: #121418;
-    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
 }
 .logo {
     z-index: 1;
     position: absolute;
     left: 50%;   
-    top: 10%;
+    top: 7%;
     transform:translate(-50%, -50%);
     width: 17%;
 }
@@ -35,53 +34,47 @@
     font-family: "GrotesqueBold";
     z-index: 1;
     position: absolute;
-    color: white;
-    left: 50%;
-    top:45%;
-    transform:translate(-50%, -50%);
-    width: 70%;
-    font-size: 54px;
-    text-align: center;
+    color: black;
+    left: 13%;
+    top:25%;
+    transform:translate(0%, -50%);
+    width: 55%;
+    font-size: 34px;
+    text-align: left;
 }
 .tg1t {
     font-family: "GrotesqueLight";
     z-index: 1;
     position: absolute;
-    color: white;
-    left: 50%;
-    top:60%;
-    transform:translate(-50%, -50%);
-    font-size: 18px;
-    width: 50%;
+    color: black;
+    left: 13%;
+    top: 55%;
+    transform:translate(0%, -50%);
+    font-size: 20px;
+    width: 55%;
     text-align: left;
 }
 .joinus {
-    font-family: "GrotesqueLight";
+    font-family: "Grotesque";
+    z-index: 1;
     position: absolute;
-    left: 50%;   
-    top: 50%;
-    transform:translate(-50%, -50%);
-    font-size: 16px;
-    color: white;
-}
-.joinusbox {
-    position: absolute;
-    right: 10%;   
-    top: 10%;
-    transform:translate(50%, -50%);
-    width:200px;
-    height:56px;
-    border:solid 1px white;
+    right: 7%;   
+    top: 7%;
+    transform:translate(0, -50%);
+    font-size: 20px;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .discover {
     font-family: "Grotesque";
-    
+    z-index: 1;
     position: absolute;
     left: 50%;   
     bottom: 7%;
     transform:translate(-50%, 50%);
     font-size: 15px;
-    color: white;
+    color: black;
     margin-top: 0;
     margin-bottom: 0;
 }

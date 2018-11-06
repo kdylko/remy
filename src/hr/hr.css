@@ -14,7 +14,7 @@
 .red {
     overflow-y: scroll;
     position: relative;
-    z-index: -20;
+    z-index: 1;
     background: white;
     width: 100vw;
     height: 100vh;
@@ -22,15 +22,15 @@
     margin-left: -8px;
 }
 .tagline {
-    font-family: "Grotesque";
+    font-family: "GrotesqueBold";
     z-index: 1;
     position: absolute;
     color: black;
-    left: 10%;
-    top: 15%;
+    left: 13%;
+    top: 14%;
     transform:translate(0, -50%);
     width: 40%;
-    font-size: 38px;
+    font-size: 34px;
     text-align: left;
 }
 .tg1t {
@@ -38,41 +38,56 @@
     z-index: 1;
     position: absolute;
     color: black;
-    left: 10%;
-    top:30%;
-    font-size: 18px;
+    left: 13%;
+    top:22%;
+    font-size: 20px;
     width: 30%;
     text-align: left;
 }
-
-.hiring {
-    font-family: "Grotesque";
+.tg2t {
+    font-family: "GrotesqueLight";
     z-index: 1;
     position: absolute;
     color: black;
-    left: 60%;
-    top: 15%;
+    left: 58%;
+    top:22%;
+    font-size: 20px;
+    width: 30%;
+    text-align: left;
+}
+.hiring {
+    font-family: "GrotesqueBold";
+    z-index: 1;
+    position: absolute;
+    color: black;
+    left: 58%;
+    top: 14%;
     transform:translate(0, -50%);
     width: 40%;
-    font-size: 40px;
+    font-size: 34px;
     text-align: left;
 }
 .vacancies {
     z-index: 1;
     position: absolute;
-    left: 60%;
-    top: 31%;
+    left: 58%;
+    top: 35%;
     color: black;
-    font-size: 18px;
-    font-family: "GrotesqueLight";
+    font-size: 28px;
+    font-family: "Grotesque";
     width: 40%;
+    line-height: 80%;
 }
 .header {
     font-family: "GrotesqueBold";
     position: relative;
+    
 }
 .location {
     font-family: "GrotesqueLight";
     position: relative;
+    color: #9B9B9B;
+    font-size:12px;
+    line-height: 1%;
 
 }
