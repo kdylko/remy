@@ -1,0 +1,19 @@
+@import "~styles/variables.scss";
+
+.body-content {
+  &:not(.inactive-job) {
+    height: calc(100% - 124px);
+    width: calc(100% - 355px);
+    margin: 124px 0 0 355px;
+
+    @media (max-width: $screen-xs-min) {
+      margin: 67px 0 0;
+      height: auto;
+      width: auto;
+    }
+  }
+
+  .inactive-job {
+    display: none;
+  }
+}

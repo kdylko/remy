@@ -1,39 +1,74 @@
 const path = require('path');
 const HWP = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const webpack = require('webpack');
 
 module.exports = {
-    entry:  path.join(__dirname, '/src/index.js'),
-    output: {
-        filename: 'build.js',
-        path: path.join(__dirname, '/dist')},
-    module:{
-        rules:[{
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader'
-            },
-            {
-                test: /\.css$/,
-                loaders: [
-                    'style-loader?sourceMap',
-                    'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
-                ]
-            }
-    ]
-    },
-    resolve: {
-        extensions: ['*', '.js', '.jsx']
-    },    
-    plugins:[
-        new HWP(
-            {template: path.join(__dirname,'/src/index.html')}
-        ),
-        new ExtractTextPlugin("app.css"),
-        new webpack.HotModuleReplacementPlugin(),
+  watch: true,
+  entry:  path.join(__dirname, '/src/index.js'),
+  output: {
+    filename: 'build.js',
+    path: path.join(__dirname, '/dist'),
+  },
+  module:{
+    rules:[
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+      {
+        test: /\.(scss|css)$/,
+        include: [
+          /assets/,
+          /src/,
+          /node_modules/,
+        ],
+        use: [{
+          loader: 'style-loader',
+        }, {
+          loader: 'css-loader',
+        }, {
+          loader: 'sass-loader',
+          options: {
+            sourceMap: true,
+            includePaths: [
+              path.resolve(process.cwd(), 'node_modules')
+            ],
+          },
+        }],
+      },
+      {
+        test: /\.(ttf|eot|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [{
+          loader: 'file-loader'
+        }],
+      },
+      {
+        test: /\.(png|jpg|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [{
+          loader: 'file-loader'
+        }],
+      },
     ],
-    devServer: {
-        hot: true
-      }
-}
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+    alias: {
+      '~styles': path.resolve(process.cwd(), 'assets/styles'),
+      '~image': path.resolve(process.cwd(), 'assets/img'),
+      '~components': path.resolve(process.cwd(), 'src/components'),
+      '~containers': path.resolve(process.cwd(), 'src/containers'),
+      '~constants': path.resolve(process.cwd(), 'src/constants'),
+    },
+  },
+  plugins:[
+    new HWP(
+        {template: path.join(__dirname,'/src/index.html')}
+    ),
+    new webpack.HotModuleReplacementPlugin(),
+  ],
+  devServer: {
+    hot: true
+  },
+  performance: { hints: false },
+};

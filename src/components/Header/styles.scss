@@ -1,0 +1,270 @@
+@import "~styles/transitions.scss";
+@import "~styles/variables.scss";
+
+.header {
+  box-sizing: border-box;
+  min-height: 780px;
+  background-color: $app-theme-color;
+  font-family: GrotesqueBold;
+  color: $white;
+  padding: 68px 180px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $screen-lg-min) {
+    padding: 68px 60px 38px 60px;
+    min-height: 660px;
+  }
+
+  @media (max-width: $screen-md-min) {
+    padding: 52px 50px 36px 50px;
+  }
+
+  @media (max-width: $screen-sm-min) {
+    padding: 52px 38px 36px 38px;
+  }
+
+  @media (max-width: $screen-xs-min) {
+    min-height: 580px;
+    padding: 36px 20px 32px 20px;
+  }
+
+  .title {
+    text-transform: uppercase;
+    height: 180px;
+    width: 1000px;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+
+    @media (max-width: $screen-lg-min) {
+      height: 168px;
+      width: 900px;
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    @media (max-width: $screen-md-min) {
+      height: 144px;
+      width: 780px;
+      font-size: 42px;
+      line-height: 48px;
+    }
+
+    @media (max-width: $screen-sm-min) {
+      height: 126px;
+      width: 692px;
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    @media (max-width: $screen-xs-min) {
+      height: 112px;
+      width: 280px;
+      font-size: 21px;
+      line-height: 28px;
+    }
+  }
+
+  .discover-more {
+    z-index: 1;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include app-transition;
+
+    @media (max-width: $screen-lg-min) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $screen-md-min) {
+      font-size: 13px;
+    }
+
+    &:hover {
+      color: $text-hover-color;
+      position: relative;
+
+      &:after {
+        content: ' ';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid $text-hover-color;
+      }
+    }
+
+    .ball-section {
+      height: 36px;
+      width: 8px;
+      margin-bottom: 24px;
+      border-radius: 4px;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, $app-theme-color 80%);
+      // animation: gradient-top 3s infinite;
+
+      .ball {
+        height: 8px;
+        width: 8px;
+        border-radius: 4px;
+        background-color: $white;
+        animation: slide-top 3s infinite;
+      }
+
+      @-webkit-keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+
+        50% {
+          -webkit-transform: translateY(28px);
+          transform: translateY(28px);
+        }
+
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+
+        50% {
+          -webkit-transform: translateY(28px);
+          transform: translateY(28px);
+        }
+
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  .logo {
+    z-index: 1;
+    height: 28px;
+    width: 250px;
+
+    @media (max-width: $screen-lg-min) {
+      height: 24px;
+      width: 215px;
+    }
+
+    @media (max-width: $screen-md-min) {
+      height: 20px;
+      width: 180px;
+    }
+
+    @media (max-width: $screen-xs-min) {
+      height: 16px;
+      width: 144px;
+    }
+  }
+
+  .join-us {
+    cursor: pointer;
+    height: 56px;
+    width: 200px;
+    border: 2px solid $white;
+    text-transform: uppercase;
+    @include app-transition;
+
+    position: absolute;
+    top: 55px;
+    right: 72px;
+
+    &:hover {
+      border-color: $element-hover-color;
+      background-color: $element-hover-color;
+    }
+
+    @media (max-width: $screen-lg-min) {
+      height: 48px;
+      width: 164px;
+      top: 47px;
+      right: 60px;
+    }
+
+    @media (max-width: $screen-md-min) {
+      height: 44px;
+      width: 132px;
+      top: 40px;
+      right: 50px;
+    }
+
+    @media (max-width: $screen-sm-min) {
+      right: 40px;
+    }
+
+    @media (max-width: $screen-xs-min) {
+      display: none;
+    }
+  }
+
+  .gradient-pattern {
+    box-shadow: inset 0 0 200px 160px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    margin: 0;
+    top: 0;
+    width: 790px;
+    min-height: 780px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    opacity: 0.47;
+    border: none;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0, rgba(255,255,255,0.298) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%), -webkit-linear-gradient(0deg, rgba(0,0,0,0) 0, rgba(255,255,255,0.298) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0, rgba(255,255,255,0.298) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%), -moz-linear-gradient(90deg, rgba(0,0,0,0) 0, rgba(255,255,255,0.298) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0, rgba(255,255,255,0.298) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%), linear-gradient(90deg, rgba(0,0,0,0) 0, rgba(255,255,255,0.298) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+    background-position: -1px -1px;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: 75px 75px;
+    background-size: 75px 75px;
+    animation: grid-animation 80s infinite;
+
+    @media (max-width: $screen-lg-min) {
+      min-height: 660px;
+    }
+
+    @media (max-width: $screen-xs-min) {
+      min-height: 580px;
+    }
+
+    @-webkit-keyframes grid-animation {
+      0% {
+        background-position: -1px -1px;
+      }
+
+      50% {
+        background-position: 450px 450px;
+      }
+
+      100% {
+        background-position: -1px -1px;
+      }
+    }
+  }
+}
