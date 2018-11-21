@@ -22,7 +22,7 @@ class SliderSection extends React.PureComponent {
 
 					<div className="conclusion">
 						<div>
-							Kinetik's companies have offices in London, LA, Berlin and Saint-Petersburg, while Remy Robotics is located in Barcelona with some software engineering functions in Moscow.
+							Kinetik's companies have offices in London, LA, Berlin and Saint-Petersburg, while Remy Robotics is located in Barcelona with some R&D functions in Moscow.
 						</div>
 
 						<div>
