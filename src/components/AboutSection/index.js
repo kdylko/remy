@@ -8,28 +8,26 @@ export default ({ height }) => (
 		style={{ height }}
 	>
 		<div className="title">
-      what we believe
+      what we do
 		</div>
 
 		<div className="description">
 			<div>
-				Advances in robotics and machine learning will transform the food industry, 
+				We believe that advances in robotics and machine learning will transform the food industry, 
 				just as they are changing many industries now. In the not-too-distant future, 
-				the meals we eat will be prepared - chopped, cooked, and served - with the help of robots. 
+				the meals we eat will be prepared - chopped, cooked, and served - with the help of robots.
+				This will save people - and businesses - time, lower costs, 
+				improve and standardise quality, and reduce food waste. 
 			</div>
 			<div>
-				We are using robotic technology to create 'robotic kitchen’ platform that can cook any cuisine
-				or any dish in the world. This will save people - and businesses - time, lower costs, 
-				improve and standardise quality, and reduce food waste.
+				We create fully robotic platform that can cook any cuisine or any dish in the world.
+				This could be used for dark kitchens, kitchen factories, delivery-only companies, food-operators and other 
+				businesses where constant quality, adaptability to any recipe, operational effectiveness 
+				plays major role.
 			</div>
 			<div>
-				For businesses (dark-kitchens, restaurants, factories) a new models would emerge.
-				To start a restaurant you won't need a huge upfront investments, and proficiency in kitchen operations,
-				but rather undestanding of your product market-fit and client services.
-			</div>
-			<div>
-				At home, people will be able to eat restaurant quality meals at a fraction of the cost, create individual 
-				meal plans, and keep themselves healthier.
+				We believe that our platform will boost development of on-demand food economy by allowing to start new 
+				food companies for a fraction of today's cost yet having the highest quality and operational efficiency.
 			</div>
 		</div>
 	</div>
