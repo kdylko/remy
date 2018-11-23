@@ -20,15 +20,11 @@ export default ({ height }) => (
 			</div>
 			<div>
 				We are creating a fully robotic platform that can cook any cuisine or any dish in the world. 
-				This could be used for dark kitchens, kitchen factories, delivery-only companies, food-operators 
+				This could be used for dark kitchens, kitchen factories, restaurants 
 				and other businesses where constant quality, adaptability to any recipe, and operational 
 				effectiveness plays major role.
 			</div>
-			<div>
-				We believe that our platform will boost development of the on-demand food economy by allowing 
-				food companies to operate for a fraction of today's cost, whilst still having the highest levels 
-				of quality and operational efficiency.
-			</div>
+
 		</div>
 	</div>
 );
