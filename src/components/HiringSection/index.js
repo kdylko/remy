@@ -38,7 +38,7 @@ class HiringSection extends React.PureComponent {
               <Job
                 key={job.id}
                 job={job}
-                onOpenHiringPanel={onOpenHiringPanel}
+                //onOpenHiringPanel={onOpenHiringPanel}
               />
             ))}
           </div>

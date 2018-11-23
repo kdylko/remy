@@ -4,7 +4,7 @@ export const jobs = [
   { id: 1, name: 'Robotics Engineering', location: 'barcelona, spain', country: 'spain', component: RoboticsEngineering },
   { id: 2, name: 'Mechatronics and Industrial Design', location: 'barcelona, spain', country: 'spain', component: RoboticsEngineering },
   { id: 3, name: 'Computer Vision and Machine Learning', location: 'barcelona, spain', country: 'spain', component: RoboticsEngineering },
-  { id: 4, name: 'R&D Engineering', location: 'barcelona, spain', country: 'usa', component: RoboticsEngineering },
+  { id: 4, name: 'Software Engineering', location: 'barcelona, spain', country: 'usa', component: RoboticsEngineering },
 ];
 
 export const countries = [
