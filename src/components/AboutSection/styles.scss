@@ -62,41 +62,59 @@
 
   .description {
     height: 380px;
-    width: 748px;
     font-family: Grotesque;
     line-height: 28px;
     font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-content: center;
+    align-items: center;
     
-
     @media (max-width: $screen-lg-min) {
       height: 240px;
-      width: 620px;
       font-size: 17px;
     }
 
     @media (max-width: $screen-md-min) {
       height: 288px;
-      width: 512px;
       font-size: 16px;
       line-height: 24px;
     }
 
     @media (max-width: $screen-sm-min) {
       height: 240px;
-      width: 572px;
       font-size: 15px;
       line-height: 24px;
     }
 
     @media (max-width: $screen-xs-min) {
       height: 408px;
-      width: 280px;
       font-size: 14px;
       line-height: 24px;
     }
+    .text {
+      width:748px;
+      @media (max-width: $screen-lg-min) {
+  
+        width: 620px;
+      }
+  
+      @media (max-width: $screen-md-min) {
+  
+        width: 512px;
+      }
+  
+      @media (max-width: $screen-sm-min) {
+    
+        width: 572px;
+      }
+  
+      @media (max-width: $screen-xs-min) {
+  
+        width: 280px;
+      }
+  
+    }
   }
+
 }
