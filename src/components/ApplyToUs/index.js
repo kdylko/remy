@@ -36,7 +36,7 @@ class ApplyToUs extends React.PureComponent {
     } = this.state;
 
     switch (step) {
-      case 1:
+      /*case 1:
         return (
           <Task
             topValue={topValue}
@@ -45,14 +45,14 @@ class ApplyToUs extends React.PureComponent {
             onChangeTop={this.handleChangeTop}
             onChangeBottom={this.handleChangeBottom}
           />
-        );
+        );*/
 
-      case 2:
+      case 1:
         return (
           <Form onSendResponse={this.handleSendResponse} />
         );
 
-      case 3:
+      case 2:
         return (
           <Submission
             type={typeSubmission}
@@ -68,13 +68,13 @@ class ApplyToUs extends React.PureComponent {
 
   handleNextStep = () => {
     this.setState({
-      step: 2,
+      step: 1,
     });
   };
 
   handleSendResponse = (type) => {
     this.setState({
-      step: 3,
+      step: 2,
       typeSubmission: type,
     });
   };

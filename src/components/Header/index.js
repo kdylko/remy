@@ -47,7 +47,7 @@ class Header extends React.PureComponent {
         />
 
         <div className="title">
-          robotics technology that takes the routine and inefficiency out of cooking
+          robotics solutions that takes the routine and inefficiency out of cooking
         </div>
 
         <div className="discover-more" onClick={this.handleScroll}>

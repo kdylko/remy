@@ -144,7 +144,7 @@
       justify-content: space-between;
 
       @media (max-width: $screen-lg-min) {
-        height: 170px;
+        height: 150px;
       }
 
       @media (max-width: $screen-md-min) {
@@ -159,6 +159,13 @@
       @media (max-width: $screen-xs-min) {
         height: 216px;
         width: 280px;
+      }
+      .text {
+        margin-bottom: 32px;
+
+        @media (max-width: $screen-xs-min) {
+          margin-bottom: 22px;
+        }
       }
     }
   }
