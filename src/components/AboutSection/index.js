@@ -5,7 +5,7 @@ import './styles.scss';
 export default ({ height }) => (
 	<div
 		className="about-us"
-		style={{ height }}
+		
 	>
 		<div className="title">
       what we do

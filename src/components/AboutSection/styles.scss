@@ -3,17 +3,18 @@
 .about-us {
   box-sizing: border-box;
   min-height: 780px;
+  max-height: 900px;
   width: 100%;
-  padding: 204px 0 204px 180px;
+  padding: 204px 180px 204px 180px;
   letter-spacing: 0;
 
   @media (max-width: $screen-lg-min) {
     min-height: 660px;
-    padding: 174px 0 180px 150px;
+    padding: 174px 150px 180px 150px;
   }
 
   @media (max-width: $screen-md-min) {
-    padding: 154px 0 168px 126px;
+    padding: 154px 150px 168px 126px;
   }
 
   @media (max-width: $screen-sm-min) {
@@ -31,6 +32,7 @@
     line-height: 40px;
     font-size: 34px;
     margin-bottom: 110px;
+    text-align: center;
 
     @media (max-width: $screen-lg-min) {
       font-size: 28px;
@@ -43,11 +45,18 @@
       line-height: 32px;
       margin-bottom: 84px;
     }
+    @media (max-width: $screen-sm-min) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
 
     @media (max-width: $screen-xs-min) {
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 20px;
+      text-align: left;
     }
   }
 
@@ -59,13 +68,14 @@
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    
 
     @media (max-width: $screen-lg-min) {
       height: 240px;
       width: 620px;
       font-size: 17px;
-      line-height: 24px;
+
     }
 
     @media (max-width: $screen-md-min) {

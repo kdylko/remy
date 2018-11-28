@@ -55,7 +55,7 @@ export default () => (
 
         <div className="address">
           <span>Kinetik</span>
-          <span>8st floor, Leningradsky prospect</span>
+          <span>8th floor, Leningradsky prospect</span>
           <span>36 bld. 11</span>
           <span>125167</span>
           <span>Moscow, Russia</span>
