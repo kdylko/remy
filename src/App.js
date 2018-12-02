@@ -2,13 +2,20 @@ import React from 'react';
 
 import Landing from '~containers/Landing';
 import HiringPanel from '~containers/HiringPanel';
+import PrivacyPolicy from '~containers/PrivacyPolicy';
+
+const Screen = {
+  Landing: 'Landing',
+  HiringPanel: 'Hiring Panel',
+  PrivacyPolicy: 'Privacy Policy',
+};
 
 class App extends React.PureComponent {
   state = {
     height: 0,
     width: 0,
     activeJob: null,
-    isOpenHiringPanel: false,
+    activeScreen: Screen.Landing,
   };
 
   componentDidMount = () => {
@@ -30,14 +37,14 @@ class App extends React.PureComponent {
   handleOpenHiringPanel = (id) => {
      this.setState({
       activeJob: id,
-      isOpenHiringPanel: true,
+       activeScreen: Screen.HiringPanel,
     });
   };
 
   handleCloseHiringPanel = () => {
     this.setState({
       activeJob: null,
-      isOpenHiringPanel: false,
+      activeScreen: Screen.Landing,
     });
   };
 
@@ -53,15 +60,27 @@ class App extends React.PureComponent {
     });
   };
 
+  handleOpenPrivacyPolicy = () => {
+    this.setState({
+      activeScreen: Screen.PrivacyPolicy,
+    });
+  };
+
+  handleClosePrivacyPolicy = () => {
+    this.setState({
+      activeScreen: Screen.Landing,
+    });
+  };
+
   render() {
     const {
       height,
       width,
       activeJob,
-      isOpenHiringPanel,
+      activeScreen,
     } = this.state;
 
-    if (isOpenHiringPanel) {
+    if (activeScreen === Screen.HiringPanel) {
       return (
         <HiringPanel
           activeJob={activeJob}
@@ -72,11 +91,23 @@ class App extends React.PureComponent {
       );
     }
 
+    if (activeScreen === Screen.PrivacyPolicy) {
+      return (
+        <PrivacyPolicy
+          height={height}
+          width={width}
+          screen={Screen.PrivacyPolicy}
+          onClose={this.handleClosePrivacyPolicy}
+        />
+      );
+    }
+
     return (
       <Landing
         height={height}
         width={width}
         onOpenHiringPanel={this.handleOpenHiringPanel}
+        onOpenPrivacyPolicy={this.handleOpenPrivacyPolicy}
       />
     );
   }

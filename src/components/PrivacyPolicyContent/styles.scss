@@ -1,0 +1,134 @@
+@import "~styles/variables.scss";
+
+.privacy-policy-content {
+  box-sizing: border-box;
+  padding: 95px 0 20px 180px;
+  letter-spacing: 0;
+
+  @media (max-width: $screen-lg-min) {
+    padding: 80px 0 20px 150px;
+  }
+
+  @media (max-width: $screen-md-min) {
+    padding-left: 125px;
+  }
+
+  @media (max-width: $screen-sm-min) {
+    padding: 60px 0 30px 40px;
+  }
+
+  @media (max-width: $screen-xs-min) {
+    padding: 45px 0 20px 20px;
+  }
+
+  .block {
+    margin-bottom: 50px;
+
+    .title {
+      text-transform: uppercase;
+      font-family: GrotesqueBold;
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 30px;
+
+      @media (max-width: $screen-lg-min) {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 26px;
+      }
+
+      @media (max-width: $screen-md-min) {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: $screen-xs-min) {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 14px;
+        width: 280px;
+      }
+    }
+
+    .text {
+      box-sizing: border-box;
+      width: 512px;
+      font-family: Grotesque;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 36px;
+
+      @media (max-width: $screen-lg-min) {
+        font-size: 17px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+
+      @media (max-width: $screen-md-min) {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $screen-sm-min) {
+        font-size: 15px;
+      }
+
+      @media (max-width: $screen-xs-min) {
+        font-size: 14px;
+        margin-bottom: 24px;
+        width: 280px;
+      }
+    }
+
+    .dash {
+      position: relative;
+      @media (max-width: $screen-xs-min) {
+        margin-left: 24px;
+        width: calc(280px - 24px);
+      }
+
+      &:before {
+        content: "ー";
+        position: absolute;
+        left: -48px;
+        top: auto;
+        bottom: auto;
+
+        @media (max-width: $screen-sm-min) {
+          left: -30px;
+        }
+
+        @media (max-width: $screen-xs-min) {
+          left: -24px;
+        }
+      }
+    }
+
+    .text-column {
+      max-width: 770px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .text {
+        @extend .text;
+        width: 284px;
+        margin-right: 96px;
+      }
+    }
+  }
+
+  .back-landing-button {
+    font-family: GrotesqueBold;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 56px;
+    width: 310px;
+    margin: 20px auto;
+
+    &:hover {
+      color: $text-hover-color;
+    }
+  }
+}
