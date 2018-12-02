@@ -118,17 +118,17 @@
       }
     }
   }
+}
 
-  .back-landing-button {
-    font-family: GrotesqueBold;
-    cursor: pointer;
-    text-transform: uppercase;
-    height: 56px;
-    width: 310px;
-    margin: 20px auto;
+.back-landing-button {
+  font-family: GrotesqueBold;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 56px;
+  width: 310px;
+  margin: 50px auto;
 
-    &:hover {
-      color: $text-hover-color;
-    }
+  &:hover {
+    color: $text-hover-color;
   }
 }
