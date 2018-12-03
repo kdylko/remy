@@ -47,11 +47,17 @@ class Header extends React.PureComponent {
     return (
       <div
         className="header"
-        style={{ height, width: width }}
+        style={{
+          height: isPrivacyPolicy ? '380px' : height,
+          width: width,
+        }}
       >
         <div
           className="gradient-pattern"
-          style={{ height, width: width }}
+          style={{
+            height: isPrivacyPolicy ? '380px' : height,
+            width: width,
+          }}
         />
 
         <img
@@ -66,7 +72,7 @@ class Header extends React.PureComponent {
         )}
 
         {isPrivacyPolicy && (
-          <div className="title">
+          <div className="title flex-both-centered">
             Privacy Policy
           </div>
         )}

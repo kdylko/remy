@@ -3,7 +3,6 @@
 
 .header {
   box-sizing: border-box;
-  min-height: 780px;
   background-color: $app-theme-color;
   font-family: GrotesqueBold;
   color: $white;
@@ -17,7 +16,6 @@
 
   @media (max-width: $screen-lg-min) {
     padding: 68px 60px 38px 60px;
-    min-height: 660px;
   }
 
   @media (max-width: $screen-md-min) {
@@ -29,7 +27,6 @@
   }
 
   @media (max-width: $screen-xs-min) {
-    min-height: 580px;
     padding: 36px 20px 32px 20px;
   }
 
@@ -40,6 +37,7 @@
     font-size: 56px;
     line-height: 60px;
     text-align: center;
+    vertical-align: center;
 
     @media (max-width: $screen-lg-min) {
       height: 168px;
@@ -223,7 +221,6 @@
     margin: 0;
     top: 0;
     width: 790px;
-    min-height: 780px;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
@@ -244,14 +241,6 @@
     -webkit-background-size: 75px 75px;
     background-size: 75px 75px;
     animation: grid-animation 80s infinite;
-
-    @media (max-width: $screen-lg-min) {
-      min-height: 660px;
-    }
-
-    @media (max-width: $screen-xs-min) {
-      min-height: 580px;
-    }
 
     @-webkit-keyframes grid-animation {
       0% {

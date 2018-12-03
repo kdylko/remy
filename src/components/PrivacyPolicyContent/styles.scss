@@ -53,7 +53,7 @@
 
     .text {
       box-sizing: border-box;
-      width: 512px;
+      width: 75%;
       font-family: Grotesque;
       font-size: 20px;
       line-height: 28px;
@@ -78,7 +78,6 @@
       @media (max-width: $screen-xs-min) {
         font-size: 14px;
         margin-bottom: 24px;
-        width: 280px;
       }
     }
 
@@ -107,7 +106,6 @@
     }
 
     .text-column {
-      max-width: 770px;
       display: flex;
       flex-wrap: wrap;
 
