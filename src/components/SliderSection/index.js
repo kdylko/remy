@@ -15,8 +15,8 @@ class SliderSection extends React.PureComponent {
 
 						<div className="advantages">
 							<div>Electric Vehicles — <span className="plus"><a href="https://arrival.com">Arrival</a></span>,</div>
-							<div>Robofacturing — <span className="plus"><a href="https://roborace.com">TRA Robotics</a></span>,</div>
-							<div>Autonomous Vehicles — <span className="plus"><a href="https://tra.ai">Roborace</a></span>.</div>
+							<div>Robofacturing — <span className="plus"><a href="https://tra.ai">TRA Robotics</a></span>,</div>
+							<div>Autonomous Vehicles — <span className="plus"><a href="https://roborace.com">Roborace</a></span>.</div>
 						</div>
 					</div>
 
