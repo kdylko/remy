@@ -11,6 +11,8 @@ class Header extends React.PureComponent {
   static propTypes = {
     height: PropTypes.number.isRequired,
     width: PropTypes.number.isRequired,
+    screen: PropTypes.string,
+    onClosePrivacyPolicy: PropTypes.func,
   };
 
   scrollTo = (offsetTop) => {
@@ -24,13 +26,23 @@ class Header extends React.PureComponent {
   };
 
   handleJoinUsScroll = () => {
-    this.scrollTo(
+    const { onClosePrivacyPolicy } = this.props;
+    onClosePrivacyPolicy && onClosePrivacyPolicy();
+
+    setTimeout(() => {
+      this.scrollTo(
         document.querySelector('.hiring-section').offsetTop
-    );
+      );
+    }, 100);
   };
 
   render() {
-    const { height, width } = this.props;
+    const {
+      height,
+      width,
+      screen,
+    } = this.props;
+    const isPrivacyPolicy = screen === 'Privacy Policy';
 
     return (
       <div
@@ -41,22 +53,33 @@ class Header extends React.PureComponent {
           className="gradient-pattern"
           style={{ height, width: width }}
         />
+
         <img
           src={logo}
           className="logo"
         />
 
-        <div className="title">
-          robotics solutions that takes the routine and inefficiency out of cooking
-        </div>
-
-        <div className="discover-more" onClick={this.handleScroll}>
-          <div className="ball-section">
-            <div className="ball" />
+        {!isPrivacyPolicy && (
+          <div className="title">
+            robotics solutions that takes the routine and inefficiency out of cooking
           </div>
+        )}
 
-          discover more
-        </div>
+        {isPrivacyPolicy && (
+          <div className="title">
+            Privacy Policy
+          </div>
+        )}
+
+        {!isPrivacyPolicy && (
+          <div className="discover-more" onClick={this.handleScroll}>
+            <div className="ball-section">
+              <div className="ball" />
+            </div>
+
+            discover more
+          </div>
+        )}
 
         <div className="join-us flex-both-centered" onClick={this.handleJoinUsScroll}>
           join us

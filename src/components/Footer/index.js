@@ -3,7 +3,9 @@ import React from 'react';
 import logo from '~image/Remy_logo_white.svg';
 import './styles.scss';
 
-export default () => (
+export default ({
+  onOpenPrivacyPolicy,
+}) => (
   <div className="footer">
     <div className="countries">
       <div className="country">
@@ -85,7 +87,12 @@ export default () => (
         />
         <span className="copyright">Copyright © 2018. All rights reserved.</span>
       </div>
-      <span className="privacy-policy">Privacy Policy</span>
+      <span
+        className="privacy-policy"
+        onClick={onOpenPrivacyPolicy}
+      >
+        Privacy Policy
+      </span>
     </div>
   </div>
 );
