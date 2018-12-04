@@ -79,18 +79,21 @@
       height: 288px;
       font-size: 16px;
       line-height: 24px;
+      align-items: normal;
     }
 
     @media (max-width: $screen-sm-min) {
       height: 240px;
       font-size: 15px;
       line-height: 24px;
+      align-items: normal;
     }
 
     @media (max-width: $screen-xs-min) {
       height: 408px;
       font-size: 14px;
       line-height: 24px;
+      align-items: normal;
     }
     .text {
       width:748px;

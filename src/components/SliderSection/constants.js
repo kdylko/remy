@@ -1,6 +1,6 @@
-import roborace from '~image/roborace.jpg';
-import arrival from '~image/arrival.jpg';
-import last from '~image/07.png';
+import roborace from '~image/02.png';
+import arrival from '~image/03.png';
+import last from '~image/01.png';
 
 export const slides = [
   arrival,
