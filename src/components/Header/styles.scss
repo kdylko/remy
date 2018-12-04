@@ -2,6 +2,7 @@
 @import "~styles/variables.scss";
 
 .header {
+  min-height: 380px;
   box-sizing: border-box;
   background-color: $app-theme-color;
   font-family: GrotesqueBold;
@@ -28,6 +29,7 @@
 
   @media (max-width: $screen-xs-min) {
     padding: 36px 20px 32px 20px;
+    min-height: 200px;
   }
 
   .title {

@@ -48,14 +48,14 @@ class Header extends React.PureComponent {
       <div
         className="header"
         style={{
-          height: isPrivacyPolicy ? '380px' : height,
+          height: isPrivacyPolicy ? '' : height,
           width: width,
         }}
       >
         <div
           className="gradient-pattern"
           style={{
-            height: isPrivacyPolicy ? '380px' : height,
+            height: isPrivacyPolicy ? '' : height,
             width: width,
           }}
         />
