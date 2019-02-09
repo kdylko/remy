@@ -107,20 +107,16 @@ class ApplyToUs extends React.PureComponent {
   };
 
   render() {
-    const { isOpen } = this.state;
-    const component = this.switchStep();
+    // const { isOpen } = this.state;
+    // const component = this.switchStep();
 
     return (
-      <Popup
-        button={(
-          <div className="button">send your cv</div>
-        )}
-        onOpen={this.handleOpenPopup}
-        onClose={this.handleClosePopup}
-        isOpen={isOpen}
-      >
-        {component}
-      </Popup>
+			<a
+				href="https://remy-robotics.breezy.hr"
+				className="button"
+			>
+				apply here
+			</a>
     );
   }
 }
