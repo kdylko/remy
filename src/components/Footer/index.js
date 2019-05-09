@@ -20,6 +20,8 @@ class Footer extends React.PureComponent {
   };
 
   render() {
+    const currentYear = new Date().getFullYear();
+
     return (
       <div className="footer">
         <div className="countries">
@@ -100,7 +102,7 @@ class Footer extends React.PureComponent {
               src={logo}
               className="logo"
             />
-            <span className="copyright">Copyright © 2018. All rights reserved.</span>
+            <span className="copyright">Copyright © { currentYear }. All rights reserved.</span>
           </div>
           <span
             className="privacy-policy"
