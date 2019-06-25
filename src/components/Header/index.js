@@ -67,7 +67,7 @@ class Header extends React.PureComponent {
 
         {!isPrivacyPolicy && (
           <div className="title">
-            robotics solutions that takes the routine and inefficiency out of cooking
+            Robotics solutions that take the routine and incefficiency out of cooking
           </div>
         )}
 
