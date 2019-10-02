@@ -34,6 +34,8 @@ class Footer extends React.PureComponent {
               <span>Remy Robotics (HQ)</span>
               <span>Port Vell Barcelona</span>
               <span>Carrer de l’Escar 26 (Gallery Building)</span>
+              <span>Passeig de Joan de Borbó,</span>
+              <span>99, 1st floor</span>
               <span>08039</span>
               <span>Barcelona, Spain</span>
             </div>
